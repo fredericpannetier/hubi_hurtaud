@@ -3,7 +3,7 @@
 from odoo import models,fields,api
 #from . import models,wizards
 import os, sys
-import win32print
+#import win32print
 
 
 def printlabelonwindows(printer,labelmodelfile,charSep,parameters):
@@ -27,17 +27,17 @@ def printlabelonwindows(printer,labelmodelfile,charSep,parameters):
         raw_data = contenu
       
       
-    hPrinter = win32print.OpenPrinter (printer)
-    try:
-        hJob = win32print.StartDocPrinter(hPrinter, 1, ("print", None, "RAW"))
-        try:
-            win32print.StartPagePrinter (hPrinter)
-            win32print.WritePrinter (hPrinter, raw_data)
-            win32print.EndPagePrinter (hPrinter)
-        finally:
-            win32print.EndDocPrinter (hPrinter)
-    finally:
-        win32print.ClosePrinter (hPrinter)
+    #hPrinter = win32print.OpenPrinter (printer)
+    #try:
+    #    hJob = win32print.StartDocPrinter(hPrinter, 1, ("print", None, "RAW"))
+    #    try:
+    #        win32print.StartPagePrinter (hPrinter)
+    #        win32print.WritePrinter (hPrinter, raw_data)
+    #        win32print.EndPagePrinter (hPrinter)
+    #    finally:
+    #        win32print.EndDocPrinter (hPrinter)
+    #finally:
+    #    win32print.ClosePrinter (hPrinter)
 
 def callFonction(self):
     return
