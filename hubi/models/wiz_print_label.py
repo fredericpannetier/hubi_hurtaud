@@ -3,7 +3,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 import os, sys
-import win32print
+#import win32print
 from ..controllers import ctrl_print
 #from controllers import ctrl_print
 
